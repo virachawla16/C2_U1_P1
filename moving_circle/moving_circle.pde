@@ -19,4 +19,14 @@ void draw()
   {
     circle[i].Draw();
   }
-}
+  for (int i=0; i < circle.length; i++)
+  {
+    for (int j=0; j< circle.lenght; j++)
+    {
+      if (i!=j)
+      {
+        float d=dist(circle[i]._x, circle[i]._y, circle[j]._x, circle[j]._y)
+          if (d<60);
+        {
+          circle[i]._velocityY = circle[i]._velocityY * -1
+        }
