@@ -16,21 +16,21 @@ class Circle
 
   void Draw()
   {
-    ellipse(_x, _y, 120, 120);
+    ellipse(_x, _y, 60, 60);
     _x = _x - 5 * _velocityX;
     _y = _y + 3 * _velocityY;
 
-    if (_x>800 || _x<0)
+    if (_x>800-30 || _x<0+30)
     {
       _velocityX = _velocityX * -1;
     }
 
-    if (_y<0)
+    if (_y<0+30)
     {
       _velocityY = _velocityY * -1;
     }
 
-    if (_y>800)
+    if (_y>800-3-0)
     {
       _velocityY = _velocityY * -1;
     }
